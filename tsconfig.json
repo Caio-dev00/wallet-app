@@ -1,6 +1,19 @@
 {
   "compilerOptions": {
     "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@src": ["src/*"],
+      "@assets": ["assets/*"],
+      "@components": ["components/*"],
+      "@config": ["config/*"],
+      "@hooks": ["hooks/*"],
+      "@routes": ["routes/*"],
+      "@screens": ["screens/*"],
+      "@services": ["services/*"],
+      "@styles": ["styles/*"],
+      "@utils": ["utils/*"],
+    },
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
