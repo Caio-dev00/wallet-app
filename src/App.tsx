@@ -1,9 +1,8 @@
+import 'react-native-gesture-handler';
 import React, {useCallback} from "react";
 import * as SplashScreen from 'expo-splash-screen';
 import { View, Text } from "react-native";
 import { ThemeProvider } from "styled-components/native";
-
-
 import {
   useFonts,
   Poppins_300Light,
@@ -16,6 +15,9 @@ import {
 import { DMSans_400Regular } from "@expo-google-fonts/dm-sans";
 import { DMSerifDisplay_400Regular } from "@expo-google-fonts/dm-serif-display";
 import COLORS from "../src/styles/theme";
+import { StatusBar } from "expo-status-bar";
+
+import { Login } from "./screens/Login";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -42,15 +44,9 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={COLORS}>
-      <View
-        onLayout={onLayoutRootView}
-        style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}
-      >
-        <Text>Wallet App</Text>
+      <StatusBar hidden/>
+      <View onLayout={onLayoutRootView}>
+        <Login/>
       </View>
     </ThemeProvider>
   )
