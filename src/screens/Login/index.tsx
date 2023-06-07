@@ -12,6 +12,8 @@ import {
 import { ButtonSocialGoogle } from "../../components/ButtonSocialGoogle/ButtonSocialGoogle";
 import { ButtonSocial } from "../../components/ButtonSociaFacebook/ButtonSocial";
 
+import { Input } from "../../components/Input/Input";
+
 const Login: React.FC = () => {
   return (
     <SafeAreaView>
@@ -29,7 +31,9 @@ const Login: React.FC = () => {
         </ContentHeader>
 
         <ContentBody>
-
+            <Input
+              name="email"
+            />
         </ContentBody>
 
         <ContentFooter>

@@ -39,7 +39,7 @@ export const IconContainer = styled.View<IContainerProps>`
   margin-right: ${RFValue(3)}px;
   border-top-left-radius: ${RFValue(5)}px;
   border-bottom-left-radius: ${RFValue(5)}px;
-  background-color: ${({ theme }) => theme.COLORS.GRAY5}
+  background-color: ${({ theme }) => theme.COLORS.GRAY5};
 `;
 
 export const InputText = styled(TextInput)<ITextProps>`
@@ -56,7 +56,7 @@ export const InputText = styled(TextInput)<ITextProps>`
       border-bottom-color: ${({ theme }) => theme.COLORS.BLUE1};
   `};
 
-  ${({ hasError })=> hasError && css`
+  ${({ hasError }) => hasError && css`
       border-bottom-color: ${({ theme }) => theme.COLORS.RED};
   `}
 
